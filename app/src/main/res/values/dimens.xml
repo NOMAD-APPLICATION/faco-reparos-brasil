@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titulo">20dp</dimen>
+    <dimen name="corpoUm">14sp</dimen>
+    <dimen name="corpoDois">12sp</dimen>
+    <dimen name="paddingPadrao">16dp</dimen>
+    <dimen name="list_divider">1dp</dimen>
+</resources>

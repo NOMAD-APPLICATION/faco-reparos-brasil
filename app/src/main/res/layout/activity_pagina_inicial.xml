@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="br.com.facotudobrasil.PaginaInicialActivity">
+
+
+    <TextView
+        android:id="@+id/tituloFacoTudoPaginaInicial"
+        android:text="@string/facoTudo"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:id="@+id/txtDescricaoPaginaInicial"
+        android:text="@string/desejaIr"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearImovel"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="28dp" />
+
+    <LinearLayout
+        android:id="@+id/linearImovel"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/paddingPadrao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imgParaSeuImovelPaginaInicial"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:background="@drawable/custom_border"
+            android:contentDescription="@string/paraImovel"
+            android:padding="8dp"
+            android:src="@drawable/ic_para_imovel" />
+
+        <TextView
+            android:id="@+id/txtParaSeuImovelPaginaInicial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/paraImovel"
+            android:textColor="@color/colorPrimaryText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearVeiculo"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/linearImovel"
+        android:orientation="vertical"
+        android:layout_marginEnd="@dimen/paddingPadrao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgParaSeuVeiculoPaginaInicial"
+            android:src="@drawable/ic_para_veiculo"
+            android:contentDescription="@string/paraImovel"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:padding="8dp"
+            android:background="@drawable/custom_border" />
+
+        <TextView
+            android:id="@+id/txtParaSeuVeiculoPaginaInicial"
+            android:text="@string/paraVeiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"/>
+    </LinearLayout>
+
+
+    <Button
+        android:onClick="sejaParceiro"
+        android:id="@+id/btnSejaParceiroPaginaInicial"
+        android:text="@string/sejaNossoParceiro"
+        android:background="@drawable/custom_border"
+        android:contentDescription="@string/sejaNossoParceiro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

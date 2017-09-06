@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtNomeUsuarioCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddingPadrao"
+                android:layout_marginStart="@dimen/paddingPadrao"
+                android:layout_marginEnd="@dimen/paddingPadrao"
+                android:textSize="12sp"
+                android:text="@string/nomeUsuario">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtNomeUsuarioCadastro"
+                    android:hint="@string/nomeUsuario"
+                    android:inputType="text"
+                    android:layout_below="@id/txtNomeUsuarioCadastro"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtSobrenomeUsuarioCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddingPadrao"
+                android:layout_marginStart="@dimen/paddingPadrao"
+                android:layout_marginEnd="@dimen/paddingPadrao"
+                android:textSize="12sp"
+                android:text="@string/sobrenomeUsuario">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtSobrenomeUsuarioCadastro"
+                    android:hint="@string/sobrenomeUsuario"
+                    android:inputType="text"
+                    android:layout_below="@id/txtSobrenomeUsuarioCadastro"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtTelefoneUsuarioCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddingPadrao"
+                android:layout_marginStart="@dimen/paddingPadrao"
+                android:layout_marginEnd="@dimen/paddingPadrao"
+                android:textSize="12sp"
+                android:text="@string/telefoneUsuario">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtTelefoneUsuarioCadastro"
+                    android:hint="@string/telefoneUsuario"
+                    android:inputType="text"
+                    android:layout_below="@id/txtTelefoneUsuarioCadastro"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtEmailUsuarioCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddingPadrao"
+                android:layout_marginStart="@dimen/paddingPadrao"
+                android:layout_marginEnd="@dimen/paddingPadrao"
+                android:textSize="12sp"
+                android:text="@string/sobrenomeUsuario">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtEmailUsuarioCadastro"
+                    android:hint="@string/emailUsuario"
+                    android:inputType="text"
+                    android:layout_below="@id/txtEmailUsuarioCadastro"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtSegmentoUsuarioCadastro"
+                android:text="@string/segmentoUsuario"
+                android:layout_marginStart="@dimen/paddingPadrao"
+                android:layout_marginEnd="@dimen/paddingPadrao"
+                android:layout_marginTop="@dimen/paddingPadrao"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/rdSegmentoCadastro"
+                android:layout_marginStart="@dimen/paddingPadrao"
+                android:layout_marginTop="@dimen/paddingPadrao"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rdImoveisCadastro"
+                    android:text="@string/imoveisUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/rdVeiculosCadastro"
+                    android:text="@string/veiculosusuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <Button
+                android:onClick="cadastrarUsuario"
+                android:id="@+id/btnCadastrarUsuarioCadastro"
+                android:text="@string/cadastrar"
+                android:background="@drawable/custom_border_button"
+                android:layout_marginStart="@dimen/paddingPadrao"
+                android:layout_marginEnd="@dimen/paddingPadrao"
+                android:layout_marginTop="@dimen/paddingPadrao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

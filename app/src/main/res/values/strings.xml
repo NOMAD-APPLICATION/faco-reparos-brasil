@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">FacoTudoBrasil</string>
+
+    // tela inicial
+    <string name="logoEmpresa">Logo da empresa</string>
+    <string name="facoTudo">Faço Tudo Reparos</string>
+    <string name="desejaIr">Qual sua necessidade?</string>
+    <string name="paginaInicial">Página Inicial</string>
+    <string name="paraImovel">Ir para seu imóvel</string>
+    <string name="paraVeiculo">Ir para seu veículo</string>
+    <string name="sejaNossoParceiro">Seja nosso parceiro</string>
+
+
+    //tela de cadastro
+    <string name="cadastro">Cadastro</string>
+    <string name="nomeUsuario">Nome</string>
+    <string name="sobrenomeUsuario">Sobrenome</string>
+    <string name="segmentoUsuario">Segmento:</string>
+    <string name="imoveisUsuario">Imóveis</string>
+    <string name="veiculosusuario">Veículos</string>
+    <string name="telefoneUsuario">Telefone</string>
+    <string name="emailUsuario">Email</string>
+    <string name="cadastrar">Cadastrar</string>
+
+    //tela de confirmação
+    <string name="confirmacao">Confirmação</string>
+    <string name="descricaoConfirma">Espere enquanto é detectado automaticamente um SMS enviado para o número:</string>
+    <string name="numeroConfirma">+55 (16)9999-8888</string>
+    <string name="naoRecebeuCodigo">Não recebeu o código?</string>
+    <string name="tenteNovamente">Tente novamente</string>
+    <string name="avancar">Avançar</string>
+
+    //tela de bem vindo
+    <string name="bemVindo">Seja Bem Vindo!</string>
+    <string name="textoBoasVindas">Pronto, você já é nosso parceiro e acaba de ganhar R$70,00 em bônus para nos conhecer :)</string>
+    <string name="ok">OK</string>
+
+    //tela de pedidos
+    <string name="pedidos">Pedidos</string>
+
+    // erro
+    <string name="preenchaCampo">Preencha o campo corretamente.</string>
+
+</resources>

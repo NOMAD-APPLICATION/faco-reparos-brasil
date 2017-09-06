@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.facotudobrasil">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_faco_tudo_brasil_icone"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_faco_tudo_brasil_icone"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PaginaInicialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".CadastroClienteActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/cadastro"
+            android:parentActivityName=".PaginaInicialActivity"/>
+
+        <activity
+            android:name=".ConfirmacaoEmailECelularActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/confirmacao"
+            android:parentActivityName=".CadastroClienteActivity"/>
+
+        <activity
+            android:name=".PedidosActivity"
+            android:label="@string/pedidos"
+            android:screenOrientation="portrait" />
+
+
+    </application>
+
+</manifest>

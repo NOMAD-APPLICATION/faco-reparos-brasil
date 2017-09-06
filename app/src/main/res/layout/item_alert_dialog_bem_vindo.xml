@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/paddingPadrao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTituloItemAlert"
+        android:text="@string/bemVindo"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/paddingPadrao"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/relativeImgFecharItemAlert"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/txtTituloItemAlert">
+
+        <ImageView
+            android:id="@+id/imgFecharItemAlert"
+            android:src="@drawable/ic_fechar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTextoBoasVindas"
+        android:text="@string/textoBoasVindas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/relativeImgFecharItemAlert"/>
+
+    <Button
+        android:id="@+id/btnOkAlertItem"
+        android:text="@string/ok"
+        android:background="@drawable/custom_border_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/paddingPadrao"
+        android:layout_below="@id/txtTextoBoasVindas"/>
+</RelativeLayout>
